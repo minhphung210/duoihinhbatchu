@@ -403,7 +403,7 @@ export default class Chosen extends Component {
         var _this = this
         return _this.state.random.map(function (item, index) {
             return (
-                <Alphabet item={item} click={_this.click} index={index} />
+                <Alphabet item={item} click={_this.click} index={index} key={index} />
             )
         })
     }

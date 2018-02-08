@@ -14,5 +14,6 @@ var create = function (time, other) {
 export function fetchData() {
     var sigs = create();
     let apiURL = "http://43.239.221.139:1990/api/game-data?signature=" + sigs.sig + "&time=" + sigs.time + "&game_id=41&level=1&page=1"
+    console.log(apiURL);
     return fetch(apiURL).then((response) => response.json())
 }

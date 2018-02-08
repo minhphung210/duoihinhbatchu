@@ -42,7 +42,8 @@ export default class Alphabet extends Component {
                 <View style={styles.square}>
                     <Animated.Text style={{
                         marginBottom: animate,
-                        textAlign: 'center'
+                        textAlign: 'center',
+                        backgroundColor:'transparent'
                     }}>
                         {this.props.item.chu}
                     </Animated.Text>
